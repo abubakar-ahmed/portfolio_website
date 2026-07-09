@@ -11,7 +11,7 @@ function Label({ children }: { children: string }) {
 
 export default function Skills() {
   return (
-    <div id="skills">
+    <div id="skills" className="reveal">
       <SectionTag label="SKILLS" />
 
       <dl className="mt-14 space-y-6 sm:mt-16">

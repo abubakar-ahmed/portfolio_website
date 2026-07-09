@@ -14,9 +14,16 @@ export function HazardStripes({ className = "" }: { className?: string }) {
   return (
     <div aria-hidden className={`flex items-center gap-2.5 ${className}`}>
       {Array.from({ length: 8 }, (_, i) => (
-        <span key={i} className="h-4 w-8 -skew-x-[28deg] bg-white sm:h-[18px] sm:w-10" />
+        <span
+          key={i}
+          className="h-4 w-8 -skew-x-[28deg] bg-white animate-stripe-in sm:h-[18px] sm:w-10"
+          style={{ animationDelay: `${i * 45}ms` }}
+        />
       ))}
-      <span className="h-4 w-3.5 -skew-x-[28deg] bg-white sm:h-[18px] sm:w-4" />
+      <span
+        className="h-4 w-3.5 -skew-x-[28deg] bg-white animate-stripe-in sm:h-[18px] sm:w-4"
+        style={{ animationDelay: "360ms" }}
+      />
     </div>
   );
 }

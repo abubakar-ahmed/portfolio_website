@@ -65,6 +65,7 @@ export interface Project {
   title: string;
   stack: string;
   description: string;
+  href: string;
 }
 
 export const projects: Project[] = [
@@ -73,18 +74,21 @@ export const projects: Project[] = [
     stack: "Reinforcement Learning · PPO/SAC · FastAPI",
     description:
       "Interactive web simulator using reinforcement learning to optimize eco-driving strategies on Formula 1 tracks — built end-to-end with real-time telemetry and model explainability.",
+    href: "https://github.com/abubakar-ahmed/EcoDrive-Simulator",
   },
   {
     title: "Tire-Wear Prediction App",
     stack: "Scikit-Learn · FastAPI · Flutter",
     description:
       "ML app predicting tire-wear percentage from driving conditions at 85% accuracy, deployed via FastAPI inside a Flutter mobile application.",
+    href: "https://github.com/abubakar-ahmed/Tire-Wear-Prediction-App",
   },
   {
     title: "Race Strategy Optimizer",
     stack: "Logistic Regression · Neural Networks",
     description:
       "F1 tire-selection model trained on 100,000+ data points covering track conditions, weather, and driving style; improved prediction accuracy by 15%.",
+    href: "https://github.com/abubakar-ahmed/Race_Staregy_Optimizer_MLOP",
   },
 ];
 

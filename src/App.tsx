@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -5,6 +6,31 @@ import Skills from "./components/Skills";
 import { CheckerStrip } from "./components/decor";
 
 export default function App() {
+  useEffect(() => {
+    const nodes = document.querySelectorAll<HTMLElement>(".reveal");
+    if (!nodes.length) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      nodes.forEach((node) => node.classList.add("is-visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+    );
+
+    nodes.forEach((node) => observer.observe(node));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div
       className="min-h-screen"

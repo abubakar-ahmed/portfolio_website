@@ -36,7 +36,7 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
 
 export default function Experience() {
   return (
-    <section id="experience">
+    <section id="experience" className="reveal">
       <div className="mx-auto w-full max-w-7xl px-6 py-20 sm:px-10 sm:py-24 lg:px-14">
         <SectionTag label="EXPERIENCE" />
         <div className="mt-12 space-y-8 sm:mt-14 sm:space-y-9">
