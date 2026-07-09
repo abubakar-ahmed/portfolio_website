@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@theme {
+  /* Racing palette */
+  --color-track: #01160c;
+  --color-carbon: #29302a;
+  --color-carbon-deep: #1d231e;
+  --color-race: #00a857;
+  --color-race-bright: #35d97e;
+
+  /* Type system */
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+  --font-condensed: "Barlow Condensed", "Barlow", ui-sans-serif, sans-serif;
+}
+
+/* Vertical stretch for heavy display text — keeps the baseline, grows upward */
+@utility stretch-tall {
+  display: inline-block;
+  transform: scaleY(1.14);
+  transform-origin: 0 100%;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-track font-sans text-white antialiased;
+  }
+
+  ::selection {
+    @apply bg-race text-white;
+  }
+}
