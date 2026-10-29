@@ -1,7 +1,7 @@
 export const profile = {
   firstName: "Abubakar",
   lastName: "Ahmed",
-  tagline: "SOFTWARE ENGINEER · AI SPECIALIST",
+  tagline: "SOFTWARE ENGINEER · AI/ML DEVELOPER",
   email: "aabubakaru06@gmail.com",
   phone: "+234 813 350 4259",
   linkedin: "https://www.linkedin.com/in/abubakar-ahmed-8919b2284/",
@@ -24,9 +24,9 @@ export const experience: ExperienceItem[] = [
     period: "12/2025 — Present",
     location: "Remote",
     bullets: [
-      "Designed and built a scalable Flutter ride-hailing driver app with modular architecture, Riverpod state management, and GoRouter navigation.",
-      "Shipped real-time ride management: GPS tracking, Google Maps integration, WebSocket live updates, and push notifications.",
-      "Hardened backend communication with Dio, token-refresh flows, encrypted storage, and multi-environment Android/iOS deployment.",
+      "Designed and developed a scalable Flutter ride-hailing driver app with modular architecture, Riverpod state management, and GoRouter navigation.",
+      "Implemented real-time ride management: GPS tracking, Google Maps integration, WebSocket live updates, and push notifications.",
+      "Built production-ready backend communication with Dio, token-refresh flows, encrypted storage, and multi-environment Android/iOS deployment.",
     ],
   },
   {
@@ -35,18 +35,20 @@ export const experience: ExperienceItem[] = [
     period: "02/2025 — 11/2025",
     location: "Kigali, Rwanda",
     bullets: [
-      "Facilitated Python classes for beginner and intermediate learners using interactive, project-based methods.",
-      "Provided one-on-one mentorship and technical support, fostering a collaborative and engaging learning environment.",
+      "Facilitated Python classes for beginner and intermediate learners.",
+      "Supported learners across skill levels with programming logic through interactive, project-based methods.",
+      "Provided one-on-one mentorship and technical support in a collaborative learning environment.",
     ],
   },
   {
     company: "Coderina EdTech",
-    role: "Robotics Trainer",
+    role: "Trainer",
     period: "2023 — 2024",
     location: "Kigali, Rwanda",
     bullets: [
       "Taught students to build, program, and operate robots on LEGO Spike and Arduino platforms.",
-      "Trained students for and co-hosted the annual FIRST LEGO League program, collaborating with educators and industry professionals.",
+      "Worked with educators and industry professionals to stay current on robotics practice.",
+      "Trained students for and hosted the annual FIRST LEGO League program in Kigali.",
     ],
   },
   {
@@ -55,8 +57,9 @@ export const experience: ExperienceItem[] = [
     period: "2020 — 2022",
     location: "Bauchi, Nigeria",
     bullets: [
-      "Provided IT support across hardware, software, and device setup for staff and programs.",
-      "Supported advocacy for SGBV survivors, including publication and dissemination of the VAPP Law across all 20 LGAs of Bauchi State.",
+      "Assisted with hardware and software troubleshooting, device setup, and day-to-day IT support.",
+      "Supported advocacy for justice delivery to survivors of sexual and gender-based violence in Nigeria.",
+      "Helped publish and disseminate the VAPP Law and Administration of Criminal Justice Laws across all 20 LGAs of Bauchi State.",
     ],
   },
 ];
@@ -73,7 +76,7 @@ export const projects: Project[] = [
     title: "EcoDrive Simulator",
     stack: "Reinforcement Learning · PPO/SAC · FastAPI",
     description:
-      "Interactive web simulator using reinforcement learning to optimize eco-driving strategies on Formula 1 tracks — built end-to-end with real-time telemetry and model explainability.",
+      "Interactive web simulator using reinforcement learning (PPO & SAC) to optimize eco-driving trajectories on Formula 1 tracks — built end-to-end with real-time telemetry, model explainability, and a FastAPI backend.",
     href: "https://github.com/abubakar-ahmed/EcoDrive-Simulator",
   },
   {
@@ -98,15 +101,35 @@ export interface SkillGroup {
 }
 
 export const skills: SkillGroup[] = [
-  { category: "Languages", items: "Python · JavaScript · Dart (Flutter)" },
-  { category: "ML & AI", items: "Scikit-Learn · TensorFlow · Neural Networks" },
-  { category: "Web & Mobile", items: "HTML5 · CSS · JavaScript · Flutter" },
-  { category: "Data", items: "MySQL · Firebase" },
-  { category: "Cloud & Tools", items: "FastAPI · Git/GitHub · AWS · Google Colab" },
+  {
+    category: "Languages",
+    items: "Python · JavaScript · Dart (Flutter)",
+  },
+  {
+    category: "AI & Machine Learning",
+    items:
+      "Hugging Face · YOLO · Reinforcement Learning (PPO, SAC) · Scikit-Learn · TensorFlow · Neural Networks",
+  },
+  {
+    category: "Mobile & Frontend",
+    items: "Flutter · React · Tailwind CSS · HTML5 · CSS · JavaScript",
+  },
+  {
+    category: "Backend & Database",
+    items: "Python · FastAPI · PostgreSQL · MongoDB · MySQL · Firebase",
+  },
+  {
+    category: "Geospatial & Mapping",
+    items: "Mapbox API (location-based services & routing)",
+  },
+  {
+    category: "Cloud & Tools",
+    items: "Git/GitHub · AWS · Google Colab · Linux",
+  },
   {
     category: "Soft Skills",
     items:
-      "Leadership · Project Management · Public Speaking · Teamwork · Time Management · Effective Communication · Critical Thinking",
+      "Leadership · Project Management · Public Speaking & Advocacy · Teamwork · Time Management · Effective Communication · Critical Thinking",
   },
 ];
 
@@ -122,9 +145,10 @@ export const certificatesUrl =
 
 export const certificates = [
   "Neural Networks and Deep Learning — DeepLearning.AI",
-  "Improving Deep Neural Networks — DeepLearning.AI",
+  "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization — DeepLearning.AI",
   "Structuring Machine Learning Projects — DeepLearning.AI",
-  "Exploratory Data Analysis for ML — IBM",
-  "Python for Everybody · Python Data Structures — Univ. of Michigan",
+  "Exploratory Data Analysis for Machine Learning — IBM",
+  "Python Programming for Everybody — University of Michigan",
+  "Python Data Structures — University of Michigan",
   "Getting Started with R — Coursera",
 ];
